@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo openvpn --config ~/.config/UIC-mwolf22.ovpn --writepid /var/run/openvpn.pid
