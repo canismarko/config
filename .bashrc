@@ -9,5 +9,3 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
 export TERMINAL=gnome-terminal
-alias res='emacs ~/research/research-notes.org &'
-alias lit='emacs ~/Documents/literature/notes.org &'
