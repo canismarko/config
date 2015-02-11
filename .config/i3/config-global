@@ -32,6 +32,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
 
+# Start emacs
+bindsym $mod+x exec emacs
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
