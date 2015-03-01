@@ -1,0 +1,11 @@
+[Unit]
+Description=Bittorent Sync per-user service
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/home/mwolf/bin/btsync
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
