@@ -9,3 +9,6 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
 export TERMINAL=gnome-terminal
+
+# added by Anaconda2 4.0.0 installer
+# export PATH="/home/mwolf/bin/anaconda2/bin:$PATH"

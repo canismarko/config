@@ -1,5 +1,20 @@
 (setq load-path (cons (expand-file-name "~/.elisp") load-path))
 
+;; Downloadable repositiories from MELPA
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize)
+
+;; Python autocompletion via jedi library
+(elpy-enable)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+(setq elpy-rpc-backend "jedi")
+
 ;; Goto line shortcut
 (global-set-key "\C-l" 'goto-line)
 
