@@ -18,6 +18,10 @@
 ;; Goto line shortcut
 (global-set-key "\C-l" 'goto-line)
 
+;; Recompile shortcuts
+(global-set-key (kbd "C-c r") 'recompile)
+(setq compilation-scroll-output 1)
+
 ;; Citation manager for org-mode
 (defun org-mode-reftex-setup ()
   (load-library "reftex")
