@@ -6,6 +6,14 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
+;; Remove menu bar and tool bar
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
+;; Transparency for compositing window manager
+(set-frame-parameter (selected-frame) 'alpha '(85 . 70))
+(add-to-list 'default-frame-alist '(alpha . (85 . 70)))
+
 ;; For loading conda environments in pyvenv
 (setenv "WORKON_HOME" "/home/mwolf/.conda/envs")
 (pyvenv-mode 1)
@@ -67,7 +75,7 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (adwaita)))
+ '(custom-enabled-themes (quote (wombat)))
  '(custom-safe-themes
    (quote
     ("715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
