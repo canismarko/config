@@ -54,6 +54,12 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# Colors
+# class                 border  backgr. text    indicator child_border
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.unfocused        #005854 #005854 #00ffec #00cdbe #292d2e   #005854
+client.focused          #43006d #43006d #f7ebff #2e9ef4   #43006d
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -134,6 +140,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Load gnome goodies, like volume control
+exec --no-startup-id /usr/lib64/gnome-settings-daemon/gnome-settings-daemon
+# exec --no-startup-id nm-applet
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

@@ -11,8 +11,8 @@
 (tool-bar-mode -1)
 
 ;; Transparency for compositing window manager
-(set-frame-parameter (selected-frame) 'alpha '(85 . 70))
-(add-to-list 'default-frame-alist '(alpha . (85 . 70)))
+(set-frame-parameter (selected-frame) 'alpha '(93 . 80))
+(add-to-list 'default-frame-alist '(alpha . (93 . 80)))
 
 ;; For loading conda environments in pyvenv
 (setenv "WORKON_HOME" "/home/mwolf/.conda/envs")
