@@ -7,6 +7,7 @@
 
 # Alias for logging into UIC's supercomputer cluster
 alias 'ssh-extreme'='ssh mwolf22@login-1.extreme.uic.edu -o ServerAliveInterval=30'
+alias 'ssh-labpi'='ssh pi@10.19.196.45'
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
