@@ -15,5 +15,11 @@ export EDITOR=emacs
 export TERMINAL=gnome-terminal
 
 # added by Anaconda2 4.0.0 installer
-export PATH="/opt/anaconda/bin/:$PATH"
+# export PATH="/opt/anaconda/bin/:$PATH"
 # export PATH="/home/mwolf/bin/anaconda2/bin:$PATH"
+
+# added by travis gem
+[ -f /home/mwolf/.travis/travis.sh ] && source /home/mwolf/.travis/travis.sh
+
+# added by Miniconda3 4.2.12 installer
+export PATH="/home/mwolf/miniconda3/bin:$PATH"
