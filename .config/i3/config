@@ -54,7 +54,7 @@ exec --no-startup-id /usr/bin/feh --bg-scale /home/mwolf/Pictures/backgrounds/ch
 bindsym $mod+Shift+q kill
 
 # Lock the screen
-set $lockscreen i3lock -ti /home/mwolf/Pictures/backgrounds/Windows-7-Desktop-Screenshot-windows-7-37090168-1920-1080.png -p win
+set $lockscreen i3lock -ti /home/mwolf/Pictures/backgrounds/arch_linux-wallpaper-1920x1080.png
 bindsym $mod+z exec $lockscreen -n
 
 # start dmenu (a program launcher)

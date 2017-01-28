@@ -12,7 +12,9 @@ alias 'ssh-labpi'='ssh pi@10.19.196.45'
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
-export TERMINAL=gnome-terminal
+export TERMINAL=termite
+
+alias 'email'="$TERMINAL -e mutt"
 
 # added by Anaconda2 4.0.0 installer
 # export PATH="/opt/anaconda/bin/:$PATH"
