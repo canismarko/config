@@ -4,9 +4,9 @@ bind index G imap-fetch-mail
 source ~/.mutt/muttrc-logins
 
 ## Personal GMail account
-# source "~/.mutt/gmail"
-# folder-hook $folder 'source ~/.mutt/gmail'
-# folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
+source "~/.mutt/gmail"
+folder-hook $folder 'source ~/.mutt/gmail'
+folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
 
 ## UIC Work account
 source "~/.mutt/uic"
@@ -21,6 +21,14 @@ folder-hook $folder 'source ~/.mutt/uic'
 set query_command="goobook query '%s'"
 macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
 bind editor <Tab> complete-query
+
+# PGP encryption
+set crypt_use_gpgme=yes
+set crypt_replysign=yes
+set crypt_replysignencrypted=yes
+set crypt_autosign=yes
+set crypt_autosmime=yes
+set pgp_timeout=3600
 
 # Proper handling of multiple sender addresses
 # set reverse_name  
@@ -45,7 +53,8 @@ set postponed = +[Gmail]/Drafts
 set trash = +[Gmail]/Trash
 
 # Set default sort order to be reverse data
-set sort=reverse-threads
+# set sort=reverse-threads
+set sort=threads
 
 mailboxes =INBOX
 
@@ -53,13 +62,15 @@ mailboxes =INBOX
 unset imap_passive
 
 # Keep IMAP connection alive by polling intermittently (time in seconds).
-set imap_keepalive = 300
+set imap_keepalive = 30
 
 # How often to check for new mail (time in seconds).
-set mail_check = 60
+set mail_check = 120
 
-# SMTP Setup
-unset record # To avoid saving duplicate sent message
+# Automatic handling of text/html messages
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
+alternative_order text/plain text/enriched text/html
 
 # set realname = "Mark Wolf"
 # set from = "canismarko@gmail.com"
@@ -73,7 +84,7 @@ unset record # To avoid saving duplicate sent message
 
 # Palette for use with the Linux console.  Black background.
 
-color hdrdefault blue default
+color hdrdefault brightblue default
 color quoted blue default
 color signature blue default
 color attachment red default
@@ -81,7 +92,7 @@ color prompt brightmagenta default
 color message brightred default
 color error brightred default
 color indicator black red
-color status brightgreen blue
+# color status brightgreen blue # Overridden by accountrc files
 color tree white default
 color normal white default
 color markers red default

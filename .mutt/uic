@@ -16,11 +16,18 @@ set record = +Sent
 set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
 set realname='Mark Wolf'
 set from=$imap_user
+alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
 set hostname="uic.edu"
 set signature="Mark"
 # Connection options
 set ssl_force_tls = yes
 unset ssl_starttls
+
+# SMTP Setup
+unset record # To avoid saving duplicate sent message in gmail
+
+# Special coloring for this account
+color status brightblue blue
 
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_uic_user@uic.edu imap_pass=${my_uic_pass}"

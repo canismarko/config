@@ -6,13 +6,16 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
+;; Mutt e-mail support
+(setq auto-mode-alist (append '(("/tmp/mutt.*" . mail-mode)) auto-mode-alist))
+
 ;; Remove menu bar and tool bar
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
 ;; Transparency for compositing window manager
-(set-frame-parameter (selected-frame) 'alpha '(93 . 80))
-(add-to-list 'default-frame-alist '(alpha . (93 . 80)))
+(set-frame-parameter (selected-frame) 'alpha '(96 . 90))
+(add-to-list 'default-frame-alist '(alpha . (96 . 90)))
 
 ;; For loading conda environments in pyvenv
 (setenv "WORKON_HOME" "/home/mwolf/.conda/envs")

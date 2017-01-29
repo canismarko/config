@@ -1,2 +1,45 @@
 [colors]
-background = rgba(63, 63, 63, 0.8)
+
+# Transparent background
+background = rgba(10, 0, 22, 0.93)
+
+# From http://terminal.sexy
+[colors]
+
+# special
+foreground      = #d3b6f5
+foreground_bold = #d3b6f5
+cursor          = #d3b6f5
+background      = #0a0016
+
+# black
+color0  = #000000
+color8  = #b8b8b8
+
+# red
+color1  = #bd5567
+color9  = #d98793
+
+# green
+color2  = #0ea77c
+color10 = #00ffec
+
+# yellow
+color3  = #896624
+color11 = #f3f498
+
+# blue
+color4  = #002a5c
+color12 = #95c9e7
+
+# magenta
+color5  = #43006d
+color13 = #d3b6f5
+
+# cyan
+color6  = #00728e
+color14 = #70f7ff
+
+# white
+color7  = #ffffff
+color15 = #ffffff
