@@ -10,7 +10,7 @@ background = rgba(10, 0, 22, 0.93)
 foreground      = #d3b6f5
 foreground_bold = #d3b6f5
 cursor          = #d3b6f5
-# background      = #0a0016
+# background      = #000000
 
 # black
 color0  = #000000
@@ -29,7 +29,7 @@ color3  = #896624
 color11 = #f3f498
 
 # blue
-color4  = #002a5c
+color4  = #2e517a
 color12 = #95c9e7
 
 # magenta
