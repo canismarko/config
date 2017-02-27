@@ -72,6 +72,9 @@ set mailcap_path = ~/.mutt/mailcap
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
+# Handling of links inside documents
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+
 # set realname = "Mark Wolf"
 # set from = "canismarko@gmail.com"
 # set use_from = yes
