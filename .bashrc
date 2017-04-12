@@ -25,3 +25,6 @@ alias 'email'="$TERMINAL -e mutt"
 
 # added by Miniconda3 4.2.12 installer
 export PATH="/home/mwolf/miniconda3/bin:$PATH"
+
+# added by Anaconda3 4.3.1 installer
+# export PATH="/home/mwolf/anaconda3/bin:$PATH"

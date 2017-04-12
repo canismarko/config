@@ -18,7 +18,8 @@
 (add-to-list 'default-frame-alist '(alpha . (96 . 90)))
 
 ;; For loading conda environments in pyvenv
-(setenv "WORKON_HOME" "/home/mwolf/.conda/envs")
+;; (setenv "WORKON_HOME" "/home/mwolf/.conda/envs")
+(setenv "WORKON_HOME" "/home/mwolf/anaconda3/envs")
 (pyvenv-mode 1)
 
 ;; elpy

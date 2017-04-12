@@ -57,7 +57,8 @@ exec --no-startup-id /usr/bin/feh --bg-scale /home/mwolf/Pictures/backgrounds/ch
 bindsym $mod+Shift+q kill
 
 # Lock the screen
-set $lockscreen i3lock -ti /home/mwolf/Pictures/backgrounds/arch_linux-wallpaper-1920x1080.png
+# set $lockscreen i3lock -ti /home/mwolf/Pictures/backgrounds/arch_linux-wallpaper-1920x1080.png
+set $lockscreen i3lock -f
 bindsym $mod+z exec $lockscreen -n
 
 # start dmenu (a program launcher)
