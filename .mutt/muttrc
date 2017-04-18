@@ -30,6 +30,12 @@ set crypt_autosign=yes
 set crypt_autosmime=yes
 set pgp_timeout=3600
 
+set smart_wrap
+
+#scroll inside the message rather than the index
+bind pager <up> previous-line
+bind pager <down> next-line
+
 # Proper handling of multiple sender addresses
 # set reverse_name  
 # set from=$my_gmail_user@gmail.com
