@@ -58,8 +58,9 @@ bindsym $mod+Shift+q kill
 
 # Lock the screen
 # set $lockscreen i3lock -ti /home/mwolf/Pictures/backgrounds/arch_linux-wallpaper-1920x1080.png
-set $lockscreen i3lock -f
-bindsym $mod+z exec $lockscreen -n
+# set $lockscreen i3lock -fln
+set $lockscreen i3lock-fancy
+bindsym $mod+z exec --no-startup-id $lockscreen
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
