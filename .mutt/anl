@@ -1,0 +1,32 @@
+# Usernames and passwords are set in a different file `muttrc-logins`
+source ~/.mutt/muttrc-logins
+
+# so they are not tracked in version control
+set imap_user=${my_anl_user}
+set imap_pass=${my_anl_pass}
+
+set folder = imaps://$imap_user@mail.anl.gov/
+
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record = +Sent
+
+## Send options, should be the same as UIC e-mail
+set smtp_url=smtps://$my_uic_user@uic.edu:$my_uic_pass@smtp.gmail.com
+set realname='Mark Wolfman'
+set from=$my_uic_user@uic.edu
+alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
+set hostname="uic.edu"
+set signature="Mark"
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+# SMTP Setup
+unset record # To avoid saving duplicate sent message in gmail
+
+# Special coloring for this account
+color status brightred red
+
+## Hook -- IMPORTANT!
+account-hook $folder "set imap_user=$my_anl_user@anl.gov imap_pass=${my_anl_pass}"

@@ -26,5 +26,15 @@ alias 'email'="$TERMINAL -e mutt"
 # added by Miniconda3 4.2.12 installer
 export PATH="/home/mwolf/miniconda3/bin:$PATH"
 
+# Run chromium with a previously started SSH tunnel
+# ssh -NTvD 4711 user@host
+function secure_chromium {
+    port=4711
+    export SOCKS_SERVER=localhost:$port
+    export SOCKS_VERSION=5
+    chromium &
+    exit
+}
+
 # added by Anaconda3 4.3.1 installer
 # export PATH="/home/mwolf/anaconda3/bin:$PATH"

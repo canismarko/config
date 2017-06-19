@@ -7,11 +7,17 @@ source ~/.mutt/muttrc-logins
 source "~/.mutt/gmail"
 folder-hook $folder 'source ~/.mutt/gmail'
 folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
+mailboxes +
+
+## Argonne mail
+source "~/.mutt/anl"
+folder-hook $folder 'source ~/.mutt/anl'
+mailboxes +
 
 ## UIC Work account
 source "~/.mutt/uic"
-# set imap_pass = #t9yDABnrcZ99WUd
 folder-hook $folder 'source ~/.mutt/uic'
+mailboxes +
 
 # GMail personal folder info
 # set folder=imaps://imap.googlemail.com/
@@ -43,6 +49,7 @@ bind pager <down> next-line
 ## Shortcuts
 macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail<enter><change-folder>!<enter>'
 macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/uic<enter><change-folder>!<enter>'
+macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.mutt/anl<enter><change-folder>!<enter>'
 
 # Store message headers locally to speed things up.  If hcache is a
 # folder, Mutt will create sub cache folders for each account which
