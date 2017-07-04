@@ -7,11 +7,15 @@ source ~/.mutt/muttrc-logins
 source "~/.mutt/gmail"
 folder-hook $folder 'source ~/.mutt/gmail'
 folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
+# Add personal gmail to the mailboxes view
+mailboxes +
 
 ## UIC Work account
 source "~/.mutt/uic"
 # set imap_pass = #t9yDABnrcZ99WUd
 folder-hook $folder 'source ~/.mutt/uic'
+# Add UIC email to the mailboxes view
+mailboxes +
 
 # GMail personal folder info
 # set folder=imaps://imap.googlemail.com/
