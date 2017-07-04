@@ -214,7 +214,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Suspend the system
-bindsym XF86PowerOff exec $lockscreen && systemctl suspend
+bindsym XF86PowerOff exec systemctl suspend && $lockscreen
 
 bindsym $mod+r mode "resize"
 
@@ -226,3 +226,6 @@ bar {
 
 # Set up monitors properly
 exec --no-startup-id xrandr --output HDMI-0 --primary --left-of DVI-I-1
+
+# Window specific settings
+for_window [title="Google Hangouts"] floating disable
