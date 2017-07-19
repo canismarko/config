@@ -14,7 +14,7 @@ set record = +Sent
 
 ## Send options.
 set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
-set realname='Mark Wolf'
+set realname='Mark Wolfman'
 set from=$imap_user
 alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
 set hostname="uic.edu"
