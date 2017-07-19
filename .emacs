@@ -84,6 +84,7 @@
    (quote
     ("715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
  '(inhibit-startup-screen t)
+ '(org-agenda-files (quote ("~/Documents/literature/notes.org")))
  '(package-selected-packages (quote (hamburg-theme jedi elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

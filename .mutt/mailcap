@@ -5,11 +5,14 @@ text/html; w3m -I %{charset} -T text/html; copiousoutput;
 image/*; feh %s
 
 # Office documents
-application/vnd.openxmlformats-officedocument.wordprocessingml.document;libreoffice %s
-application/vnd.openxmlformats-officedocument.wordprocessingml.template;libreoffice %s
-application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;libreoffice %s
-application/vnd.openxmlformats-officedocument.spreadsheetml.template;libreoffice %s
-application/vnd.openxmlformats-officedocument.presentationml.presentation;libreoffice %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice %s
+application/vnd.oasis.opendocument.text; libreoffice %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.template; libreoffice %s
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; libreoffice %s
+application/vnd.openxmlformats-officedocument.spreadsheetml.template; libreoffice %s
+application/vnd.openxmlformats-officedocument.presentationml.presentation; libreoffice %s
+application/msword; libreoffice %s
 
 # Other documents
 application/pdf; evince %s
+application/eps; evince %s

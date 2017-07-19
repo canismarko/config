@@ -7,6 +7,8 @@ source ~/.mutt/muttrc-logins
 source "~/.mutt/gmail"
 folder-hook $folder 'source ~/.mutt/gmail'
 folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
+
+# Add personal gmail to the mailboxes view
 mailboxes +
 
 ## Argonne mail
@@ -17,6 +19,8 @@ mailboxes +
 ## UIC Work account
 source "~/.mutt/uic"
 folder-hook $folder 'source ~/.mutt/uic'
+
+# Add UIC email to the mailboxes view
 mailboxes +
 
 # GMail personal folder info
