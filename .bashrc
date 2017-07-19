@@ -12,7 +12,6 @@ alias 'ssh-labpi'='ssh pi@10.19.196.45'
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
-export TERMINAL=termite
 
 alias 'email'="$TERMINAL -e mutt"
 
@@ -23,8 +22,8 @@ alias 'email'="$TERMINAL -e mutt"
 # added by travis gem
 [ -f /home/mwolf/.travis/travis.sh ] && source /home/mwolf/.travis/travis.sh
 
-# added by Miniconda3 4.2.12 installer
-export PATH="/home/mwolf/miniconda3/bin:$PATH"
+# Miniconda3 binaries
+export PATH="$HOME/miniconda3/bin:$PATH"
 
 # Run chromium with a previously started SSH tunnel
 # ssh -NTvD 4711 user@host
@@ -35,6 +34,3 @@ function secure_chromium {
     chromium &
     exit
 }
-
-# added by Anaconda3 4.3.1 installer
-# export PATH="/home/mwolf/anaconda3/bin:$PATH"

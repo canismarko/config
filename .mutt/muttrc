@@ -123,3 +123,8 @@ color index red default "~N|~O"
 
 # color body brightwhite black '\*+[^*]+\*+'
 # color body brightwhite black '_+[^_]+_+'
+
+# Ignore most e-mail headers
+ignore *
+unignore To: From: Subject: Date: Cc:
+hdr_order Date: From: To: Cc: Subject:

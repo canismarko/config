@@ -21,8 +21,8 @@ font pango:DejaVu Sans Mono 8
 
 # window_border 1px
 # for_window [class="^.*"] border pixel 0
-gaps inner 10
-gaps outer 5
+# gaps inner 10
+# gaps outer 5
 
 # Compositor to allow for terminal transparency
 exec --no-startup-id /usr/bin/compton -c
@@ -38,8 +38,9 @@ exec --no-startup-id /usr/bin/compton -c
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec termite # gnome-terminal
+bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec termite
+# bindsym $mod+Return exec gnome-terminal
 
 # Start ipython
 bindsym $mod+p exec termite -e ipython
