@@ -38,3 +38,4 @@ function secure_chromium {
 # Argonne specific things
 alias mutt="/local/mutt-1.8.3/mutt"
 export PATH="/local/bin/:$PATH" # For local binary installation
+export LD_LIBRARY_PATH=/local/lib/:$LD_LIBRARY_PATH

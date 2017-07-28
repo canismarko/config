@@ -21,11 +21,11 @@ font pango:DejaVu Sans Mono 8
 
 # window_border 1px
 # for_window [class="^.*"] border pixel 0
-gaps inner 10
-gaps outer 5
+# gaps inner 10
+# gaps outer 5
 
 # Compositor to allow for terminal transparency
-exec --no-startup-id /usr/bin/compton -c
+# exec --no-startup-id /usr/bin/compton -c
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
