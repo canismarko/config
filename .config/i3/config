@@ -21,8 +21,8 @@ font pango:DejaVu Sans Mono 8
 
 # window_border 1px
 # for_window [class="^.*"] border pixel 0
-# gaps inner 10
-# gaps outer 5
+gaps inner 10
+gaps outer 5
 
 # Compositor to allow for terminal transparency
 exec --no-startup-id /usr/bin/compton -c
@@ -52,7 +52,7 @@ bindsym $mod+x exec emacs
 bindsym $mod+m exec termite -e mutt
 
 # Set background
-exec --no-startup-id /usr/bin/feh --bg-scale /home/mwolf/Pictures/backgrounds/chemistry-periodic-table-wallpaper.png
+exec --no-startup-id /usr/bin/feh --bg-scale ~/.config/i3/chemistry-periodic-table-wallpaper.png
 
 # kill focused window
 bindsym $mod+Shift+q kill
