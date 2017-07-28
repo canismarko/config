@@ -52,7 +52,7 @@ bindsym $mod+x exec emacs
 bindsym $mod+m exec termite -e mutt
 
 # Set background
-exec --no-startup-id /usr/bin/feh --bg-scale /home/mwolf/Pictures/backgrounds/chemistry-periodic-table-wallpaper-49704-51383-hd-wallpapers.png
+exec --no-startup-id /usr/bin/feh --bg-scale /home/mwolf/Pictures/backgrounds/chemistry-periodic-table-wallpaper.png
 
 # kill focused window
 bindsym $mod+Shift+q kill

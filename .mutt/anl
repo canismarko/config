@@ -5,7 +5,8 @@ source ~/.mutt/muttrc-logins
 set imap_user=${my_anl_user}
 set imap_pass=${my_anl_pass}
 
-set folder = imaps://$imap_user@mail.anl.gov/
+# set folder = imaps://$imap_user@mail.anl.gov/
+set folder = imaps://$imap_user@imap.gmail.com/
 
 set spoolfile = +INBOX
 set postponed = +Drafts
