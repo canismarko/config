@@ -57,13 +57,17 @@ exec --no-startup-id /usr/bin/feh --bg-scale ~/.config/i3/chemistry-periodic-tab
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# Lock the screen
+# Automatic screen locking
+# ------------------------
 # set $lockscreen i3lock -ti /home/mwolf/Pictures/backgrounds/arch_linux-wallpaper-1920x1080.png
 # set $lockscreen i3lock -fln
 set $lockscreen i3lock-fancy
+# set $lockscreen env XSECURELOCK_SAVER=saver_mplayer xsecurelock
+exec --no-startup-id xautolock -time 1 -locker "$lockscreen"
 bindsym $mod+z exec --no-startup-id $lockscreen
 
-# start dmenu (a program launcher)
+# Start dmenu (a program launcher)
+# --------------------------------
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -71,12 +75,14 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Colors
+# ------
 # class                 border  backgr. text    indicator child_border
 # client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.unfocused        #005854 #005854 #00ffec #00cdbe #292d2e   #005854
 client.focused          #43006d #43006d #f7ebff #2e9ef4   #43006d
 
-# change focus
+# Change focus and move windows
+# -----------------------------
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
