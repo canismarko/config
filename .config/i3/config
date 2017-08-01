@@ -63,7 +63,7 @@ bindsym $mod+Shift+q kill
 # set $lockscreen i3lock -fln
 set $lockscreen i3lock-fancy
 # set $lockscreen env XSECURELOCK_SAVER=saver_mplayer xsecurelock
-exec --no-startup-id xautolock -time 1 -locker "$lockscreen"
+exec --no-startup-id xautolock -time 5 -locker "$lockscreen"
 bindsym $mod+z exec --no-startup-id $lockscreen
 
 # Start dmenu (a program launcher)
