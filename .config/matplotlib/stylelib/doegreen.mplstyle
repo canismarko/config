@@ -1,0 +1,12 @@
+# Style for inclusion with department of energy templates
+
+# Colors:
+#   doegreen: (0.13, 0.39, 0.20) #216332
+
+figure.edgecolor : (0.13, 0.39, 0.20)
+xtick.color	 : (0.13, 0.39, 0.20)
+ytick.color	 : (0.13, 0.39, 0.20)
+legend.edgecolor : (0.13, 0.39, 0.20)
+text.color	 : (0.13, 0.39, 0.20)
+axes.edgecolor	 : (0.13, 0.39, 0.20)
+axes.labelcolor	 : (0.13, 0.39, 0.20)
