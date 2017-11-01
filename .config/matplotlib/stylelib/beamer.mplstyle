@@ -1,0 +1,22 @@
+font.family : sans-serif
+font.size : 6
+
+axes.spines.right : False
+axes.spines.top : False
+
+axes.linewidth : 0.5
+xtick.major.width : 0.5
+xtick.minor.width : 0.3
+ytick.major.width : 0.5
+ytick.minor.width : 0.3
+
+lines.markersize : 4
+lines.marker : o
+lines.linestyle : :
+lines.linewidth : 0.75
+
+axes.facecolor : (1, 1, 1)
+figure.facecolor : (0.95, 0.95, 0.95)
+figure.figsize : 5, 2.5
+figure.dpi : 500
+savefig.bbox : tight

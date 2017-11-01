@@ -1,0 +1,12 @@
+# Style for inclusion with UIC templates
+
+# Colors:
+#   uicblue: (0.05, 0.133, 0.251)
+
+figure.edgecolor : (0.05, 0.133, 0.251)
+xtick.color	 : (0.05, 0.133, 0.251)
+ytick.color	 : (0.05, 0.133, 0.251)
+legend.edgecolor : (0.05, 0.133, 0.251)
+text.color	 : (0.05, 0.133, 0.251)
+axes.edgecolor	 : (0.05, 0.133, 0.251)
+axes.labelcolor	 : (0.05, 0.133, 0.251)
