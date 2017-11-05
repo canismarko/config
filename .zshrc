@@ -84,3 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Miniconda3 binaries
+export PATH="$HOME/miniconda3/bin:$PATH"

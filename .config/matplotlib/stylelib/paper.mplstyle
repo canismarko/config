@@ -2,7 +2,7 @@ axes.spines.right : False
 axes.spines.top : False
 axes.spines.left : True
 axes.spines.bottom : True
-axes.titlesize : normal
+axes.titlesize : medium
 
 font.family : serif
 savefig.bbox : tight
