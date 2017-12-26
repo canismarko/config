@@ -51,6 +51,9 @@ bindsym $mod+x exec emacs
 # Start mutt e-mail client
 bindsym $mod+m exec termite -e mutt
 
+# Start chromium in netflix mode
+bindsym $mod+n exec chromium --app=https://www.netflix.com
+
 # Set background
 exec --no-startup-id /usr/bin/feh --bg-scale ~/.config/i3/chemistry-periodic-table-wallpaper.png
 

@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias netflix="chromium --app=https://www.netflix.com"
 
 # Miniconda3 binaries
 export PATH="$HOME/miniconda3/bin:$PATH"

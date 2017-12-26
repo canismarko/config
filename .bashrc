@@ -14,6 +14,7 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
 
 alias 'email'="$TERMINAL -e mutt"
+alias 'netflix'="chromium --app=https://www.netflix.com"
 
 # added by Anaconda2 4.0.0 installer
 # export PATH="/opt/anaconda/bin/:$PATH"
