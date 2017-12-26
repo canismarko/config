@@ -234,5 +234,10 @@ bar {
 # Set up monitors properly
 exec --no-startup-id xrandr --output HDMI-0 --primary --left-of DVI-I-1
 
+# Start the bluetooth tray icon
+exec --no-startup-id blueberry-tray
+
 # Window specific settings
 for_window [title="Google Hangouts"] floating disable
+# Presenter console for pdf's made by beamer
+for_window [title="^pdfpc - present"] border none floating enable

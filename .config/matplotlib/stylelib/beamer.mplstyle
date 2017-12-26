@@ -16,7 +16,7 @@ lines.linestyle : :
 lines.linewidth : 0.75
 
 axes.facecolor : (1, 1, 1)
-figure.facecolor : (0.95, 0.95, 0.95)
+# figure.facecolor : (0.95, 0.95, 0.95)
 figure.figsize : 5, 2.5
 figure.dpi : 500
 savefig.bbox : tight
