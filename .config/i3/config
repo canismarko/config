@@ -223,6 +223,10 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Screen swapping controls
+bindsym $mod+F4 exec xrandr --output eDP1 --auto --scale 1x1 --output HDMI1 --off
+bindsym $mod+Shift+F4 exec xrandr --output eDP1 --off --output HDMI1 --auto --scale 2x2
+
 # Suspend the system
 bindsym XF86PowerOff exec systemctl suspend && $lockscreen
 
