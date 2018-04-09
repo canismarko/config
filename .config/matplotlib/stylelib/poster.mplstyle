@@ -1,3 +1,6 @@
 font.size : 24
-font.family : serif
+font.family : sans-serif
 savefig.bbox : tight
+figure.dpi : 500
+
+lines.linewidth : 4
