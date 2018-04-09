@@ -1,6 +1,13 @@
-font.size : 24
+font.size : 29.86
 font.family : sans-serif
 savefig.bbox : tight
 figure.dpi : 500
 
 lines.linewidth : 4
+lines.markersize : 8
+lines.markeredgewidth : 2.67
+
+axes.spines.right : False
+axes.spines.top : False
+axes.spines.left : True
+axes.spines.bottom : True
