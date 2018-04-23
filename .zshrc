@@ -94,3 +94,7 @@ export PATH="$HOME/miniconda3/bin:$PATH"
 # Ruby gems
 # export PATH=$PATH:$(`ruby -rubygems -e "puts Gem.user_dir"`)/bin:$HOME/bin
 export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
+
+# Setup termite terminfo
+export TERM=xterm
+export TERMINFO=/usr/share/terminfo/x/xterm-termite
