@@ -63,7 +63,8 @@ bindsym $mod+Shift+q kill
 # Automatic screen locking
 # ------------------------
 # set $lockscreen i3lock -fti /home/mwolf/Pictures/backgrounds/arch_linux-wallpaper-1920x1080.png
-set $lockscreen i3lock -fti /home/mwolf/Pictures/backgrounds/gentoo_linux-wallpaper-1920x1080.png
+# set $lockscreen i3lock -fti /home/mwolf/Pictures/backgrounds/gentoo_linux-wallpaper-1920x1080.png
+set $lockscreen i3lock -fti /home/mwolf/Pictures/backgrounds/gentoo_linux-wallpaper-`xdpyinfo | awk '/dimensions/{print $2}'`.png
 # set $lockscreen i3lock -fln
 # set $lockscreen i3lock-fancy
 # set $lockscreen env XSECURELOCK_SAVER=saver_mplayer xsecurelock
