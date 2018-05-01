@@ -85,7 +85,7 @@
     ("715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
  '(inhibit-startup-screen t)
  '(org-agenda-files (quote ("~/Documents/literature/notes.org")))
- '(package-selected-packages (quote (arduino-mode hamburg-theme jedi elpy))))
+ '(package-selected-packages (quote (scad-mode arduino-mode hamburg-theme jedi elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
