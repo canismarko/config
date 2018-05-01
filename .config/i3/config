@@ -230,7 +230,7 @@ bindsym $mod+F4 exec xrandr --output eDP1 --auto --scale 1x1 --output HDMI1 --of
 bindsym $mod+Shift+F4 exec xrandr --output eDP1 --off --output HDMI1 --auto --scale 2x2
 
 # Suspend the system
-bindsym XF86PowerOff exec systemctl suspend && $lockscreen
+bindsym XF86PowerOff exec $lockscreen && systemctl suspend
 
 bindsym $mod+r mode "resize"
 
