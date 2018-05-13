@@ -5,4 +5,4 @@ axes.spines.bottom : True
 axes.titlesize : medium
 
 font.family : serif
-savefig.bbox : tight
+

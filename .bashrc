@@ -35,3 +35,6 @@ function secure_chromium {
     chromium &
     exit
 }
+
+# Added conda path
+export PATH="/home/mwolf/anaconda3/bin:$PATH"

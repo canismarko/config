@@ -90,6 +90,8 @@ alias gitlog="git log --pretty=oneline --graph --all"
 
 # Miniconda3 binaries
 export PATH="$HOME/miniconda3/bin:$PATH"
+# Added conda path
+export PATH="/home/mwolf/anaconda3/bin:$PATH"
 
 # Ruby gems
 # export PATH=$PATH:$(`ruby -rubygems -e "puts Gem.user_dir"`)/bin:$HOME/bin

@@ -1,0 +1,10 @@
+[Unit]
+Description=Globus connect personal data management
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/mwolf/build/globusconnectpersonal-2.3.5/globusconnectpersonal -start
+
+[Install]
+WantedBy=default.target

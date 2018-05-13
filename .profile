@@ -57,3 +57,4 @@ export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin:$HOME/bin
 
 # Import any local settings
 [[ -f "$HOME/.profile-local" ]] && source "$HOME/.profile-local"
+

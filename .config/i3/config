@@ -38,12 +38,13 @@ exec --no-startup-id /usr/bin/compton -c
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+set $terminal i3-sensible-terminal
+bindsym $mod+Return exec $terminal
 # bindsym $mod+Return exec termite
 # bindsym $mod+Return exec gnome-terminal
 
 # Start ipython
-bindsym $mod+p exec termite -e ipython
+bindsym $mod+p exec $terminal -e ipython
 
 # Start emacs
 bindsym $mod+x exec emacs
@@ -68,7 +69,7 @@ set $lockscreen i3lock -fti /home/mwolf/Pictures/backgrounds/gentoo_linux-wallpa
 # set $lockscreen i3lock -fln
 # set $lockscreen i3lock-fancy
 # set $lockscreen env XSECURELOCK_SAVER=saver_mplayer xsecurelock
-exec --no-startup-id xautolock -time 5 -locker "$lockscreen"
+exec --no-startup-id xautolock -time 20 -locker "$lockscreen"
 bindsym $mod+z exec --no-startup-id $lockscreen
 
 # Start dmenu (a program launcher)
