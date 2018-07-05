@@ -9,7 +9,7 @@
 # export PYTHONPATH=$PYTHONPATH:/usr/local/astra/python
 
 # Fullprof Rietveld refinement
-export FULLPROF=$HOME/bin/fullprof
+export FULLPROF=$HOME/build/fullprof
 export PATH=$PATH:$FULLPROF
 
 export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin:$HOME/bin

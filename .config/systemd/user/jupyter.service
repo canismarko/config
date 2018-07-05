@@ -1,0 +1,18 @@
+# Launch the jupyter-notebook server
+# Referenced from https://gist.github.com/whophil/5a2eab328d2f8c16bb31c9ceaf23164f
+
+[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Environment=FULLPROF=/home/mwolf/build/fullprof
+Type=simple
+PIDFile=/home/mwolf/.jupyter.pid
+ExecStart=/home/mwolf/miniconda3/bin/jupyter notebook
+WorkingDirectory=/
+Restart=always
+RestartSec=10
+#KillMode=mixed
+
+[Install]
+WantedBy=default.target

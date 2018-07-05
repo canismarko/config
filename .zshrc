@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Fullprof for refining X-ray diffraction data
+export FULLPROF=$HOME/build/fullprof
+
 # Path to your oh-my-zsh installation.
 # export ZSH=$HOME/.oh-my-zsh
 export ZSH=/usr/share/oh-my-zsh
