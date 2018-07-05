@@ -87,6 +87,10 @@ bindsym $mod+d exec dmenu_run
 client.unfocused        #005854 #005854 #00ffec #00cdbe #292d2e   #005854
 client.focused          #43006d #43006d #f7ebff #2e9ef4   #43006d
 
+# Move workspaces around
+bindsym $mod+Ctrl+h move workspace to output left
+bindsym $mod+Ctrl+l move workspace to output right
+
 # Change focus and move windows
 # -----------------------------
 bindsym $mod+h focus left
