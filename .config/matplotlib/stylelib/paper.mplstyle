@@ -4,5 +4,6 @@ axes.spines.left : True
 axes.spines.bottom : True
 axes.titlesize : medium
 
+savefig.bbox: standard
 font.family : serif
 
