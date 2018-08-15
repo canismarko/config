@@ -2,6 +2,8 @@ font.size : 29.86
 font.family : sans-serif
 figure.dpi : 500
 
+savefig.bbox : standard
+
 lines.linewidth : 4
 lines.markersize : 8
 lines.markeredgewidth : 2.67

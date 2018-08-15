@@ -10,9 +10,9 @@ xtick.minor.width : 0.3
 ytick.major.width : 0.5
 ytick.minor.width : 0.3
 
-lines.markersize : 4
-lines.marker : o
-lines.linestyle : :
+lines.markersize : 2
+lines.marker : None
+lines.linestyle : -
 lines.linewidth : 0.75
 
 axes.facecolor : (1, 1, 1)
