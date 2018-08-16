@@ -6,6 +6,20 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
+;; Auto-calculation of math formula
+(defun calc-eval-region (arg beg end)
+  "Calculate the region and display the result in the echo area.
+With prefix ARG non-nil, insert the result at the end of region."
+  (interactive "P\nr")
+  (let* ((expr (buffer-substring-no-properties beg end))
+         (result (calc-eval expr)))
+        (message "%s = %s" expr result)
+      (delete-region beg end)
+      (save-excursion
+        (insert result))))
+
+(global-set-key (kbd "C-c c") 'calc-eval-region)
+
 ;; Mutt e-mail support
 (setq auto-mode-alist (append '(("/tmp/mutt.*" . mail-mode)) auto-mode-alist))
 
