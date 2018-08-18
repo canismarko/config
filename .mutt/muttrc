@@ -84,13 +84,18 @@ set imap_keepalive = 30
 # How often to check for new mail (time in seconds).
 set mail_check = 120
 
+# Avoid pausing after piping to external applications
+set wait_key = no
+
 # Automatic handling of text/html messages
 set mailcap_path = ~/.mutt/mailcap
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
 # Handling of links inside documents
-macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+# Old way: macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
 # set realname = "Mark Wolf"
 # set from = "canismarko@gmail.com"
