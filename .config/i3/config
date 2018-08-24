@@ -47,7 +47,7 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+p exec $terminal -e ipython
 
 # Start emacs
-bindsym $mod+x exec emacs-26
+bindsym $mod+x exec emacs
 
 # Start google music as app mode
 bindsym $mod+m exec chromium --app=https://music.google.com/
