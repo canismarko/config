@@ -8,7 +8,7 @@ Description=Jupyter Notebook
 Environment=FULLPROF=/home/mwolf/build/fullprof
 Type=simple
 PIDFile=/home/mwolf/.jupyter.pid
-ExecStart=/home/mwolf/miniconda3/bin/jupyter notebook
+ExecStart=/home/mwolf/miniconda3/bin/jupyter lab
 WorkingDirectory=/
 Restart=always
 RestartSec=10
