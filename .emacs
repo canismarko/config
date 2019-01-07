@@ -6,6 +6,24 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
+;; Tide setup for typescript IDE
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
 ;; Auto-calculation of math formula
 (defun calc-eval-region (arg beg end)
   "Calculate the region and display the result in the echo area.
@@ -99,7 +117,9 @@ With prefix ARG non-nil, insert the result at the end of region."
     ("715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
  '(inhibit-startup-screen t)
  '(org-agenda-files (quote ("~/Documents/literature/notes.org")))
- '(package-selected-packages (quote (scad-mode arduino-mode hamburg-theme jedi elpy))))
+ '(package-selected-packages
+   (quote
+    (typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

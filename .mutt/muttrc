@@ -6,7 +6,7 @@ source ~/.mutt/muttrc-logins
 ## Personal GMail account
 source "~/.mutt/gmail"
 folder-hook $folder 'source ~/.mutt/gmail'
-folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
+# folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
 
 # Add personal gmail to the mailboxes view
 mailboxes +

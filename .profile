@@ -60,3 +60,9 @@ export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin:$HOME/bin
 
 [[ -f "$HOME/.xprofile" ]] && source "$HOME/.xprofile"
 
+# Load fcitx for chinese input
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+fcitx -d -r
