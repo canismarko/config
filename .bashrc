@@ -37,4 +37,5 @@ function secure_chromium {
 }
 
 # Added conda path
-export PATH="/home/mwolf/anaconda3/bin:$PATH"
+# echo ". /home/mwolf/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+. /home/mwolf/miniconda3/etc/profile.d/conda.sh

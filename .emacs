@@ -1,7 +1,3 @@
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
@@ -49,14 +45,21 @@ With prefix ARG non-nil, insert the result at the end of region."
 (set-frame-parameter (selected-frame) 'alpha '(96 . 90))
 (add-to-list 'default-frame-alist '(alpha . (96 . 90)))
 
-;; For loading conda environments in pyvenv
-;; (setenv "WORKON_HOME" "/home/mwolf/.conda/envs")
-(setenv "WORKON_HOME" "/home/mwolf/miniconda3/envs")
-(pyvenv-mode 1)
-
-;; elpy
+;; Python IDE setup
+(setenv "WORKON_HOME" "~/miniconda3/envs")
+;; (pyvenv-workon "python3")
+;; (pyvenv-activate "~/miniconda3")
 (elpy-enable)
+(require 'conda)
+(conda-env-initialize-interactive-shells)
+;; (add-hook 'python-mode-hook 'anaconda-mode)
+(setq jedi:environment-root "~/miniconda3")
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 
+
+(custom-set-variables
+ '(load-home-init-file t t))
 
 ;; Custom keyboard shortcuts
 (global-set-key "\C-l" 'goto-line)
