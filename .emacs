@@ -103,6 +103,7 @@ With prefix ARG non-nil, insert the result at the end of region."
      ;; in a future version of org, use if to avoid errors
      ;; Change .pdf association directly within the alist
      (setcdr (assoc "\\.pdf\\'" org-file-apps) "okular %s")))
+(global-set-key "\C-ca" 'org-agenda)
 ;; End of citation manager for org-mode
 
 (custom-set-variables
