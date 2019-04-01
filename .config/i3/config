@@ -213,9 +213,12 @@ mode "resize" {
 }
 
 # Alsa audio controls
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
-bindsym XF86AudioMute exec amixer -q set Master toggle # Mute sound
+# bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+# bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
+# bindsym XF86AudioMute exec amixer -q set Master toggle # Mute sound
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
