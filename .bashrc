@@ -5,16 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Alias for logging into UIC's supercomputer cluster
-alias 'ssh-extreme'='ssh mwolf22@login-1.extreme.uic.edu -o ServerAliveInterval=30'
-alias 'ssh-labpi'='ssh pi@10.19.196.45'
+source $HOME/.aliases
 
-alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
-
-alias 'email'="$TERMINAL -e mutt"
-alias 'netflix'="chromium --app=https://www.netflix.com"
 
 # added by Anaconda2 4.0.0 installer
 # export PATH="/opt/anaconda/bin/:$PATH"
@@ -39,3 +33,4 @@ function secure_chromium {
 # Added conda path
 # echo ". /home/mwolf/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
 . /home/mwolf/miniconda3/etc/profile.d/conda.sh
+
