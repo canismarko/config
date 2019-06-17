@@ -2,6 +2,10 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
+;; Default setup for accessing remote file
+(setq tramp-default-method "ssh")
+(eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
+
 ;; Tide setup for typescript IDE
 (defun setup-tide-mode ()
   (interactive)
