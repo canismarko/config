@@ -6,6 +6,14 @@
 (setq tramp-default-method "ssh")
 (eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
 
+;; Load spell check and grammar check
+(dolist (hook '(text-mode-hook))
+  (add-hook hook (lambda () (flyspell-mode 1))))
+(add-hook 'python-mode-hook
+  (lambda ()
+  (flyspell-prog-mode)
+  ))
+
 ;; Tide setup for typescript IDE
 (defun setup-tide-mode ()
   (interactive)
