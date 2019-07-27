@@ -1,4 +1,4 @@
-personal_ws-1.1 en 427 
+personal_ws-1.1 en 440 
 gravimetric
 CDI
 ALS
@@ -42,6 +42,7 @@ viridis
 inflammatories
 DMC
 metastability
+sinogram
 androstenedione
 electrochemically
 Monoclinic
@@ -85,6 +86,7 @@ scimap
 octahedrally
 ICA
 ImageJ
+HFP
 centrosymmetry
 NIST
 adrenocortical
@@ -111,7 +113,7 @@ colormaps
 SSDs
 whiteline
 deoxy
-TODA
+Toda
 JEM
 undulators
 Haswell
@@ -148,6 +150,7 @@ mesoscale
 nanoscale
 electroactive
 LiC
+galvanostatically
 colorimetry
 Nahas
 morphologies
@@ -171,8 +174,9 @@ JEOL
 HPLC
 prednisolone
 MLL
-STXM
+stxm
 anisotropy
+MMM
 casted
 scintillator
 delithiation
@@ -245,33 +249,38 @@ Qian
 Formvar
 irreversibility
 EXAFS
+lmdif
 photomultiplier
 SiO
 electroanalysis
 TEM
 lacey
 TiB
-TEY
+tey
 polychromatic
 sterol
 dentate
-TFY
+tfy
 transmissivity
 morphologically
 LBNL
+TiO
 VBA
 tunable
 Isosurface
-SXSTM
+sxstm
 microfluidics
 spectro
 UIC
 SSD
 undulator
 dataset
+UHV
 synchrotrons
+STM
 Ven
 Volmer
+discretization
 Pawley
 Acknowledgement
 voxel
@@ -285,6 +294,7 @@ spectrophotometry
 vis
 galvanostatic
 xanes
+millivolts
 xas
 Jordi
 VMP
@@ -357,6 +367,7 @@ Paraview
 kB
 diffractive
 PVDF
+LiOH
 micrographs
 Acesulfame
 LiPF
@@ -382,8 +393,10 @@ Eklov
 microfabrication
 sonication
 beamline
+se
 desorption
 calomel
+px
 Kostecki
 neocuproine
 NaOH
@@ -412,6 +425,7 @@ anisotropic
 ligand
 potentiostatic
 BASF
+Binghamton
 speciation
 diosgenin
 ethylenecarbonate
