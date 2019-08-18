@@ -95,9 +95,9 @@ export EDITOR="emacs"
 source $HOME/.aliases
 
 # Miniconda3 binaries
-export PATH="$HOME/miniconda3/bin:$PATH"
+# export PATH="$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
 # Added conda path
-export PATH="/home/mwolf/anaconda3/bin:$PATH"
+# export PATH="/home/mwolf/anaconda3/bin:$PATH"
 
 # Ruby gems
 # export PATH=$PATH:$(`ruby -rubygems -e "puts Gem.user_dir"`)/bin:$HOME/bin
@@ -106,3 +106,19 @@ export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
 # Setup termite terminfo
 export TERM=xterm
 export TERMINFO=/usr/share/terminfo/x/xterm-termite
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/mwolf/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mwolf/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mwolf/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mwolf/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
