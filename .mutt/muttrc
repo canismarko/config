@@ -12,9 +12,9 @@ folder-hook $folder 'source ~/.mutt/gmail'
 mailboxes +
 
 ## Argonne mail
-# source "~/.mutt/anl"
-# folder-hook $folder 'source ~/.mutt/anl'
-# mailboxes +
+source "~/.mutt/anl"
+folder-hook $folder 'source ~/.mutt/anl'
+mailboxes +
 
 ## UIC Work account
 source "~/.mutt/uic"

@@ -1,6 +1,8 @@
 # Fix for connecting emacs using tramp
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 
+# Suppress "Couldn't connect to accessibility bus" warnings
+export NO_AT_BRIDGE=1
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
