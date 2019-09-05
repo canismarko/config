@@ -2,25 +2,24 @@
 source ~/.mutt/muttrc-logins
 
 # so they are not tracked in version control
-set imap_user=${my_anl_user}
+set imap_user="${my_anl_user}@anl.gov"
 set imap_pass=${my_anl_pass}
 
-# set folder = imaps://$imap_user@mail.anl.gov/
-set folder = imaps://$imap_user@imap.gmail.com/
-
+set folder = "imaps://${my_anl_user}%40anl.gov@outlook.office365.com/"
 set spoolfile = +INBOX
 set postponed = +Drafts
 set record = +Sent
 
 ## Send options, should be the same as UIC e-mail
-set smtp_url=smtps://$my_uic_user@uic.edu:$my_uic_pass@smtp.gmail.com
+set smtp_url="smtp://$my_anl_user@anl.gov@outlook.office365.com:587"
 set realname='Mark Wolfman'
-set from=$my_uic_user@uic.edu
+set from="$my_anl_user@anl.gov"
 alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
-set hostname="uic.edu"
+set hostname="anl.gov"
 set signature="Mark"
 # Connection options
 set ssl_force_tls = yes
+set smtp_authenticators = "login"
 unset ssl_starttls
 
 # SMTP Setup
