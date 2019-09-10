@@ -12,8 +12,9 @@ set record = +Sent
 
 ## Send options, should be the same as UIC e-mail
 set smtp_url="smtp://$my_anl_user@anl.gov@outlook.office365.com:587"
+set smtp_pass=${my_anl_pass}
 set realname='Mark Wolfman'
-set from="$my_anl_user@anl.gov"
+set from="wolfman@anl.gov"
 alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
 set hostname="anl.gov"
 set signature="Mark"
