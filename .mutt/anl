@@ -10,11 +10,12 @@ set spoolfile = +INBOX
 set postponed = +Drafts
 set record = +Sent
 
-## Send options, should be the same as UIC e-mail
-set smtp_url="smtp://$my_anl_user@anl.gov@outlook.office365.com:587"
-set smtp_pass=${my_anl_pass}
+## Send options
+set smtp_url="smtp://$my_anl_user%40anl.gov@outlook.office365.com:587"
 set realname='Mark Wolfman'
 set from="wolfman@anl.gov"
+# set smtp_pass=$my_anl_pass
+set smtp_pass=$my_anl_smtp_pass
 alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
 set hostname="anl.gov"
 set signature="Mark"

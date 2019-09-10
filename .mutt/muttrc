@@ -6,8 +6,6 @@ source ~/.mutt/muttrc-logins
 ## Personal GMail account
 source "~/.mutt/gmail"
 folder-hook $folder 'source ~/.mutt/gmail'
-# folder-hook *$my_gmail_user/ 'source ~/.mutt/gmail'
-
 # Add personal gmail to the mailboxes view
 mailboxes +
 
@@ -19,13 +17,8 @@ mailboxes +
 ## UIC Work account
 source "~/.mutt/uic"
 folder-hook $folder 'source ~/.mutt/uic'
-
 # Add UIC email to the mailboxes view
 mailboxes +
-
-# GMail personal folder info
-# set folder=imaps://imap.googlemail.com/
-# set spoolfile=+INBOX
 
 # Goobook contacts from google
 set query_command="goobook query '%s'"
