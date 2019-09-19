@@ -6,6 +6,7 @@ set imap_user=$my_gmail_user@gmail.com
 set imap_pass=$my_gmail_pass
 
 set folder = imaps://$my_gmail_user@imap.gmail.com/
+set my_gmail_folder = $folder
 
 set spoolfile = +INBOX
 set postponed = +Drafts

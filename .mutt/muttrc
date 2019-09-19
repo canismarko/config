@@ -14,11 +14,11 @@ source "~/.mutt/anl"
 folder-hook $folder 'source ~/.mutt/anl'
 mailboxes +
 
-## UIC Work account
-source "~/.mutt/uic"
-folder-hook $folder 'source ~/.mutt/uic'
-# Add UIC email to the mailboxes view
-mailboxes +
+# ## UIC Work account
+# source "~/.mutt/uic"
+# folder-hook $folder 'source ~/.mutt/uic'
+# # Add UIC email to the mailboxes view
+# mailboxes +
 
 # Goobook contacts from google
 set query_command="goobook query '%s'"
@@ -45,8 +45,12 @@ bind pager <down> next-line
 # alternates "$my_gmail_user@gmail.com|mwolf22@uic.edu"
 ## Shortcuts
 macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail<enter><change-folder>!<enter>'
-macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/uic<enter><change-folder>!<enter>'
-macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.mutt/anl<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/anl<enter><change-folder>!<enter>'
+# macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/uic<enter><change-folder>!<enter>'
+
+# For switching folders when trying to archive e-mails
+macro browser <f2> "<change-dir><kill-line>${my_gmail_folder}R/<enter>"
+macro browser <f3> "<change-dir><kill-line>${my_anl_folder}R/<enter>"
 
 # Store message headers locally to speed things up.  If hcache is a
 # folder, Mutt will create sub cache folders for each account which

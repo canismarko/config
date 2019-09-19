@@ -54,8 +54,8 @@ With prefix ARG non-nil, insert the result at the end of region."
 (tool-bar-mode -1)
 
 ;; Transparency for compositing window manager
-(set-frame-parameter (selected-frame) 'alpha '(96 . 90))
-(add-to-list 'default-frame-alist '(alpha . (96 . 90)))
+(set-frame-parameter (selected-frame) 'alpha '(97 . 90))
+(add-to-list 'default-frame-alist '(alpha . (97 . 90)))
 
 ;; Python IDE setup
 (setenv "WORKON_HOME" "~/miniconda3/envs")
@@ -79,16 +79,16 @@ With prefix ARG non-nil, insert the result at the end of region."
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (wombat)))
+ '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
-    ("715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
+    ("a7051d761a713aaf5b893c90eaba27463c791cd75d7257d3a8e66b0c8c346e77" "715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
  '(inhibit-startup-screen t)
  '(load-home-init-file t t)
  '(org-agenda-files (quote ("~/Documents/literature/notes.org")))
  '(package-selected-packages
    (quote
-    (markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
+    (zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
 
 ;; Custom keyboard shortcuts
 (global-set-key "\C-l" 'goto-line)
@@ -116,7 +116,7 @@ With prefix ARG non-nil, insert the result at the end of region."
 	    (?n . "[[notes:%l][%l-notes]]")
 	    (?p . "[[papers:%l][%l-paper]]")
 	    (?t . "%t")
-	    (?h . "** %t\n:PROPERTIES:\n:Custom_ID: %l\n:END:\n[[papers:%l][%l-paper]]")))))
+	    (?h . "** %t\n   :PROPERTIES:\n   :Custom_ID: %l\n   :END:\n   [[papers:%l][%l-paper]]")))))
   (define-key org-mode-map (kbd "C-c )") 'reftex-citation)
   (define-key org-mode-map (kbd "C-c (") 'org-mode-reftex-search))
 (add-hook 'org-mode-hook 'org-mode-reftex-setup)
