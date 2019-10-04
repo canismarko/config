@@ -18,7 +18,7 @@ set realname='Mark Wolfman'
 set from=$my_gmail_user@gmail.com
 alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
 set hostname="gmail.com"
-set signature="Mark"
+
 # Connection options
 set ssl_force_tls = yes
 # unset ssl_starttls

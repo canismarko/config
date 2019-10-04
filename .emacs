@@ -88,7 +88,7 @@ With prefix ARG non-nil, insert the result at the end of region."
  '(org-agenda-files (quote ("~/Documents/literature/notes.org")))
  '(package-selected-packages
    (quote
-    (zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
+    (conda zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
 
 ;; Custom keyboard shortcuts
 (global-set-key "\C-l" 'goto-line)

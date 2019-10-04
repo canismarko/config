@@ -14,16 +14,13 @@ source "~/.mutt/anl"
 folder-hook $folder 'source ~/.mutt/anl'
 mailboxes +
 
-# ## UIC Work account
-# source "~/.mutt/uic"
-# folder-hook $folder 'source ~/.mutt/uic'
-# # Add UIC email to the mailboxes view
-# mailboxes +
-
 # Goobook contacts from google
 set query_command="goobook query '%s'"
 macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
 bind editor <Tab> complete-query
+
+# E-mail signature
+set signature="~/.mutt/signature"
 
 # PGP encryption
 set crypt_use_gpgme=yes
@@ -39,14 +36,9 @@ set smart_wrap
 bind pager <up> previous-line
 bind pager <down> next-line
 
-# Proper handling of multiple sender addresses
-# set reverse_name  
-# set from=$my_gmail_user@gmail.com
-# alternates "$my_gmail_user@gmail.com|mwolf22@uic.edu"
 ## Shortcuts
 macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail<enter><change-folder>!<enter>'
 macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/anl<enter><change-folder>!<enter>'
-# macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/uic<enter><change-folder>!<enter>'
 
 # For switching folders when trying to archive e-mails
 macro browser <f2> "<change-dir><kill-line>${my_gmail_folder}R/<enter>"
@@ -67,7 +59,6 @@ set postponed = +[Gmail]/Drafts
 set trash = +[Gmail]/Trash
 
 # Set default sort order to be reverse data
-# set sort=reverse-threads
 set sort=threads
 
 mailboxes =INBOX
@@ -90,22 +81,12 @@ auto_view text/html
 alternative_order text/plain text/enriched text/html
 
 # Handling of links inside documents
-# Old way: macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
-
-# set realname = "Mark Wolf"
-# set from = "canismarko@gmail.com"
-# set use_from = yes
-# set edit_headers = yes
-
-# set smtp_url=smtps://$imap_user:$imap_pass@smtp.googlemail.com
-# set ssl_force_tls = yes
 
 # -*-muttrc-*-
 
 # Palette for use with the Linux console.  Black background.
-
 color hdrdefault brightblue default
 color quoted blue default
 color signature blue default
