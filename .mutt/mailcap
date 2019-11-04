@@ -4,13 +4,16 @@ text/html; w3m -I %{charset} -T text/html; copiousoutput;
 # Images
 image/*; feh %s
 
-# Office documents
-application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice %s
+# Office documents: ODF
 application/vnd.oasis.opendocument.text; libreoffice %s
+application/vnd.oasis.opendocument.presentation; libreoffice %s
+# Office documents: OOXML
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice %s
 application/vnd.openxmlformats-officedocument.wordprocessingml.template; libreoffice %s
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; libreoffice %s
 application/vnd.openxmlformats-officedocument.spreadsheetml.template; libreoffice %s
 application/vnd.openxmlformats-officedocument.presentationml.presentation; libreoffice %s
+# Office documents: Legacy
 application/msword; libreoffice %s
 
 # Other documents
