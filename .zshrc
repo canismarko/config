@@ -71,6 +71,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+export LC_TIME="en_DK.UTF-8"
 
 # Preferred editor for local and remote sessions
 export EDITOR="emacs"
@@ -124,3 +125,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# added by travis gem
+[ -f /home/mwolf/.travis/travis.sh ] && source /home/mwolf/.travis/travis.sh
