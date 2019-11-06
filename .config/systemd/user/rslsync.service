@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/home/mwolf/bin/rslsync
+ExecStart=/home/b268176/bin/rslsync
 Restart=on-abort
 
 [Install]
