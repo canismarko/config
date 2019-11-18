@@ -76,7 +76,9 @@ set mail_check = 120
 set wait_key = no
 
 # Automatic handling of text/html messages
+bind attach <return> view-mailcap
 set mailcap_path = ~/.mutt/mailcap
+unauto_view *
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 

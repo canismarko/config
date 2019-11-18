@@ -28,7 +28,8 @@ unset ssl_starttls
 unset record # To avoid saving duplicate sent message in gmail
 
 # Special coloring for this account
-color status brightred red
+color status white blue
+color indicator white blue
 
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_anl_user@anl.gov imap_pass=${my_anl_pass}"

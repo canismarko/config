@@ -28,7 +28,8 @@ unset record # To avoid saving duplicate sent message in gmail
 
 # Special coloring for this account
 # Actually it's closer to purple than magenta
-color status brightmagenta magenta
+color status white magenta
+color indicator white magenta
 
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_gmail_user imap_pass=$my_gmail_pass"

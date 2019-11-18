@@ -82,13 +82,13 @@ With prefix ARG non-nil, insert the result at the end of region."
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
-    ("a7051d761a713aaf5b893c90eaba27463c791cd75d7257d3a8e66b0c8c346e77" "715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
+    ("cdb4ffdecc682978da78700a461cdc77456c3a6df1c1803ae2dd55c59fa703e3" "a7051d761a713aaf5b893c90eaba27463c791cd75d7257d3a8e66b0c8c346e77" "715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
  '(inhibit-startup-screen t)
  '(load-home-init-file t t)
- '(org-agenda-files (quote ("~/Documents/literature/notes.org")))
+ '(org-agenda-files (quote ("~/research/literature/notes.org")))
  '(package-selected-packages
    (quote
-    (conda zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
+    (pytest conda zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
 
 ;; Custom keyboard shortcuts
 (global-set-key "\C-l" 'goto-line)
@@ -121,9 +121,9 @@ With prefix ARG non-nil, insert the result at the end of region."
   (define-key org-mode-map (kbd "C-c (") 'org-mode-reftex-search))
 (add-hook 'org-mode-hook 'org-mode-reftex-setup)
 (setq org-link-abbrev-alist
-      '(("bib" . "~/Documents/literature/refs.bib::%s")
-	("notes" . "~/Documents/literature/notes.org::#%s")
-  	("papers" . "~/Documents/literature/papers/%s.pdf"))
+      '(("bib" . "~/research/literature/refs.bib::%s")
+	("notes" . "~/research/literature/notes.org::#%s")
+  	("papers" . "~/research/literature/papers/%s.pdf"))
       )
 (eval-after-load "org"
   ;; Have PDF's open externally in okular
