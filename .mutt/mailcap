@@ -2,8 +2,9 @@
 text/html; firefox %s & sleep 5; test=test -n "$DISPLAY";
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
 
-# Images
+# Images and media files
 image/*; feh %s
+video/*; vlc %s
 
 # Office documents: ODF
 application/vnd.oasis.opendocument.text; libreoffice %s
@@ -16,7 +17,9 @@ application/vnd.openxmlformats-officedocument.spreadsheetml.template; libreoffic
 application/vnd.openxmlformats-officedocument.presentationml.presentation; libreoffice %s
 # Office documents: Legacy
 application/msword; libreoffice %s
+application/vnd.ms-excel; libreoffice %s
 
 # Other documents
 application/pdf; evince %s
 application/eps; evince %s
+
