@@ -53,6 +53,8 @@ PSPRINTER=lp
 export PSPRINTER
 
 export PATH=$PATH:$(ruby -r rubygems -e "puts Gem.user_dir")/bin:$HOME/bin
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"
 # export PYTHONPATH=$PYTHONPATH:$HOME/src/
 
 # Import any local settings
