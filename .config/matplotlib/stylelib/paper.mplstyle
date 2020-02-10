@@ -6,3 +6,6 @@ axes.titlesize : medium
 
 savefig.bbox: standard
 font.family : serif
+font.size : 8
+
+lines.markersize : 4
