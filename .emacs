@@ -116,7 +116,7 @@ With prefix ARG non-nil, insert the result at the end of region."
 	    (?n . "[[notes:%l][%l-notes]]")
 	    (?p . "[[papers:%l][%l-paper]]")
 	    (?t . "%t")
-	    (?h . "** %t\n   :PROPERTIES:\n   :Custom_ID: %l\n   :END:\n   [[papers:%l][%l-paper]]")))))
+	    (?h . "** %t\n   :PROPERTIES:\n   :Custom_ID: %l\n   :Read: false\n   :END:\n   [[papers:%l][%l-paper]]")))))
   (define-key org-mode-map (kbd "C-c )") 'reftex-citation)
   (define-key org-mode-map (kbd "C-c (") 'org-mode-reftex-search))
 (add-hook 'org-mode-hook 'org-mode-reftex-setup)
