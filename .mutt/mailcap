@@ -23,3 +23,5 @@ application/vnd.ms-excel; libreoffice %s
 application/pdf; evince %s
 application/eps; evince %s
 
+# Compressed formats
+application/zip; file-roller %s
