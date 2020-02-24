@@ -97,13 +97,7 @@ export EDITOR="emacs"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliases
 
-# Miniconda3 binaries
-# export PATH="$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
-# Added conda path
-# export PATH="/home/mwolf/anaconda3/bin:$PATH"
-
 # Ruby gems
-# export PATH=$PATH:$(`ruby -rubygems -e "puts Gem.user_dir"`)/bin:$HOME/bin
 export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
 
 # Setup termite terminfo
