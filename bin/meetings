@@ -1,0 +1,2 @@
+#!/bin/env bash
+emacs ~/Documents/meetings/meeting-notes.org &
