@@ -37,9 +37,9 @@ then
 	echo "Creating new conda environment..."
 	conda create -n gsas python=3.7
 	load-env
-	conda install -y -c pkgw-forge gtk3
-	conda install -y -c conda-forge pygobject gobject-introspection libcanberra gdk-pixbuf
-	conda install -y gsas2pkg -c briantoby
+	# conda install -y -c pkgw-forge gtk3
+	# conda install -y -c conda-forge pygobject gobject-introspection libcanberra gdk-pixbuf
+	# conda install -y gsas2pkg -c briantoby
     elif [ $1 = 'upgrade' ]
     then
 	# Upgrading an existing installation
