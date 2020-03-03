@@ -1,0 +1,57 @@
+#!/bin/env zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/mwolf/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mwolf/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mwolf/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mwolf/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+conda activate
+
+function load-env {
+    echo "Loading *gsas* conda environment..."
+    conda activate gsas
+}
+
+function launch-gsas {
+    echo "Launching GSAS..."
+    $CONDA_PREFIX/bin/python $CONDA_PREFIX/GSASII/GSASII.py
+    echo $*
+}
+
+if [ $# -gt 0 ]
+then
+    # Some arguments were passed, so sort them out
+    if [ $1 = 'install' ]
+    then
+	# New installation
+	echo "Creating new conda environment..."
+	conda create -n gsas python=3.7
+	load-env
+	conda install -y -c pkgw-forge gtk3
+	conda install -y -c conda-forge pygobject gobject-introspection libcanberra gdk-pixbuf
+	conda install -y gsas2pkg -c briantoby
+    elif [ $1 = 'upgrade' ]
+    then
+	# Upgrading an existing installation
+	load-env
+	$CONDA_PREFIX/bin/python $CONDA_PREFIX/GSASII/bootstrap.py
+    else
+	# Launch GSAS with arguments
+	load-env
+	launch-gsas $*
+    fi
+else
+    # Existing installation so just activate the environment
+    load-env
+    launch-gsas
+fi

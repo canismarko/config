@@ -3,7 +3,7 @@ alias gitlog="git log --pretty=oneline --graph --all"
 alias ls='ls --color=auto'
 
 # An alias for running gsas from the command line
-alias 'gsas'='~/miniconda3/envs/gsas/bin/python ~/miniconda3/envs/gsas/GSASII/GSASII.py'
+# alias 'gsas'='~/miniconda3/envs/gsas/bin/python ~/miniconda3/envs/gsas/GSASII/GSASII.py'
 
 # Alias for logging into UIC's supercomputer cluster
 # alias 'ssh-extreme'='ssh mwolf22@login-1.extreme.uic.edu -o ServerAliveInterval=30'
