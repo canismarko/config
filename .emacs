@@ -68,6 +68,9 @@ With prefix ARG non-nil, insert the result at the end of region."
 (setq jedi:environment-root "~/miniconda3")
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
+;; Python code folding
+(add-hook 'python-mode-hook 'hs-minor-mode)
+(global-set-key (kbd "C-c f") 'hs-toggle-hiding)
 
 
 (custom-set-variables

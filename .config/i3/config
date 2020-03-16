@@ -69,7 +69,7 @@ set $lockscreen i3lock -fti ~/.config/i3/gentoo_linux-wallpaper-`xdpyinfo | awk 
 # set $lockscreen i3lock -fln
 # set $lockscreen i3lock-fancy
 # set $lockscreen env XSECURELOCK_SAVER=saver_mplayer xsecurelock
-exec --no-startup-id xautolock -time 5 -locker "$lockscreen"
+exec --no-startup-id xautolock -time 20 -locker "$lockscreen"
 bindsym $mod+z exec --no-startup-id $lockscreen
 
 # Start dmenu (a program launcher)
