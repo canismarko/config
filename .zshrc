@@ -100,6 +100,9 @@ source $HOME/.aliases
 # Ruby gems
 export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
 
+# System python modules but with the --user option
+export PATH=$PATH:$HOME/.local/bin
+
 # Setup termite terminfo
 export TERM=xterm
 export TERMINFO=/usr/share/terminfo/x/xterm-termite
