@@ -1,1 +1,14 @@
-# 
+# Style for inclusion with Argonne National Laboratory templates
+
+# darkgray = 0.25
+# anlblue = (0, 96, 156) -> (0., 0.375, 0.609)
+# PMS violet = (91, 0, 145) -> (0.355, 0., 0.566)
+
+figure.edgecolor : (0.355, 0., 0.566)
+xtick.color	 : (0.355, 0., 0.566)
+ytick.color	 : (0.355, 0., 0.566)
+legend.edgecolor : (0.355, 0., 0.566)
+text.color	 : (0.355, 0., 0.566)
+axes.edgecolor	 : (0.355, 0., 0.566)
+axes.labelcolor	 : (0.355, 0., 0.566)
+lines.color      : (0.355, 0., 0.566) 

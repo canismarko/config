@@ -98,7 +98,9 @@ export EDITOR="emacs"
 source $HOME/.aliases
 
 # Ruby gems
-export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
+# Install Ruby Gems to ~/gems
+# export GEM_HOME="$HOME/gems"
+# export PATH="$HOME/gems/bin:$PATH"
 
 # System python modules but with the --user option
 export PATH=$PATH:$HOME/.local/bin
