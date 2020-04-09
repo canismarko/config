@@ -9,7 +9,7 @@ set imap_pass=${my_anl_pass}
 # set folder = "imaps://${my_anl_user}%40anl.gov@outlook.office365.com/"
 
 # Settings for login through davmail to allow for MFA
-set folder = "imap://localhost:1143
+set folder = "imap://localhost:1143"
 
 # Other ANL IMAP settings
 set my_anl_folder = $folder
@@ -18,7 +18,8 @@ set postponed = +Drafts
 set record = +Sent
 
 ## Send options
-set smtp_url="smtp://$my_anl_user%40anl.gov@outlook.office365.com:587"
+# set smtp_url="smtp://$my_anl_user%40anl.gov@outlook.office365.com:587"
+set smtp_url="smtp://$my_anl_user%40anl.gov@localhost:1025"
 set realname='Mark Wolfman'
 set from="wolfman@anl.gov"
 set smtp_pass=$my_anl_smtp_pass

@@ -14,8 +14,8 @@ source "~/.mutt/anl"
 folder-hook $folder 'source ~/.mutt/anl'
 mailboxes +
 
-# Goobook contacts from google
-set query_command="goobook query '%s'"
+# Query lbdbq for looking up contacts from ANL, google, etc.
+set query_command="lbdbq '%s'"
 macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
 bind editor <Tab> complete-query
 
