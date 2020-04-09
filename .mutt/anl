@@ -5,7 +5,13 @@ source ~/.mutt/muttrc-logins
 set imap_user="${my_anl_user}@anl.gov"
 set imap_pass=${my_anl_pass}
 
-set folder = "imaps://${my_anl_user}%40anl.gov@outlook.office365.com/"
+# Settings for direct IMAP access (doesn't work now that MFA is required)
+# set folder = "imaps://${my_anl_user}%40anl.gov@outlook.office365.com/"
+
+# Settings for login through davmail to allow for MFA
+set folder = "imap://localhost:1143
+
+# Other ANL IMAP settings
 set my_anl_folder = $folder
 set spoolfile = +INBOX
 set postponed = +Drafts
@@ -20,9 +26,9 @@ alternates "$my_gmail_user@gmail.com|$my_uic_user@uic.edu"
 set hostname="anl.gov"
 
 # Connection options
-set ssl_force_tls = yes
+set ssl_force_tls = no
 set smtp_authenticators = "login"
-unset ssl_starttls
+# unset ssl_starttls
 
 # SMTP Setup
 unset record # To avoid saving duplicate sent message in gmail
