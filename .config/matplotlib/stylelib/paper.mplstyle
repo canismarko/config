@@ -5,7 +5,9 @@ axes.spines.bottom : True
 axes.titlesize : medium
 
 savefig.bbox: standard
+savefig.dpi : 1200
 font.family : serif
 font.size : 8
 
 lines.markersize : 4
+lines.linewidth : 1

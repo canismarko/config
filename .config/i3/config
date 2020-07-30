@@ -124,6 +124,7 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle global
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -239,6 +240,7 @@ bindsym $mod+Shift+F4 exec xrandr --output eDP1 --off --output HDMI1 --auto --sc
 
 # Suspend the system
 bindsym XF86PowerOff exec $lockscreen && systemctl suspend
+bindsym $mod+Shift+z exec $lockscreen && systemctl suspend
 
 bindsym $mod+r mode "resize"
 

@@ -1,6 +1,8 @@
 # HTML using the w3m browser
 text/html; firefox %s & sleep 5; test=test -n "$DISPLAY";
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
+application/xml; firefox %s & sleep 5; test=test -n "$DISPLAY";
+application/xml; firefox %s & sleep 5; test=test -n "$DISPLAY";
 
 # Images and media files
 image/*; feh %s
@@ -18,6 +20,7 @@ application/vnd.openxmlformats-officedocument.presentationml.presentation; libre
 # Office documents: Legacy
 application/msword; libreoffice %s
 application/vnd.ms-excel; libreoffice %s
+application/vnd.ms-powerpoint; libreoffice %s
 
 # Other documents
 application/pdf; evince %s

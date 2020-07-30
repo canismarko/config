@@ -73,6 +73,9 @@ With prefix ARG non-nil, insert the result at the end of region."
 (global-set-key (kbd "C-c f") 'hs-toggle-hiding)
 
 
+;; Magit for interacting with git version control
+(global-set-key (kbd "C-x g") 'magit-status)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -82,16 +85,14 @@ With prefix ARG non-nil, insert the result at the end of region."
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (zenburn)))
+ '(custom-enabled-themes '(zenburn))
  '(custom-safe-themes
-   (quote
-    ("0f0a4dca8bb029dc5139f447ff25bc3c18d31872c30a46d03c6bbc706ded3586" "cdb4ffdecc682978da78700a461cdc77456c3a6df1c1803ae2dd55c59fa703e3" "a7051d761a713aaf5b893c90eaba27463c791cd75d7257d3a8e66b0c8c346e77" "715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
+   '("0f0a4dca8bb029dc5139f447ff25bc3c18d31872c30a46d03c6bbc706ded3586" "cdb4ffdecc682978da78700a461cdc77456c3a6df1c1803ae2dd55c59fa703e3" "a7051d761a713aaf5b893c90eaba27463c791cd75d7257d3a8e66b0c8c346e77" "715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default))
  '(inhibit-startup-screen t)
  '(load-home-init-file t t)
- '(org-agenda-files (quote ("~/research/literature/notes.org")))
+ '(org-agenda-files '("~/research/literature/notes.org"))
  '(package-selected-packages
-   (quote
-    (pytest conda zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy))))
+   '(magit pytest conda zenburn-theme markdown-mode typescript-mode tide scad-mode arduino-mode hamburg-theme jedi elpy)))
 
 ;; Custom keyboard shortcuts
 (global-set-key "\C-l" 'goto-line)

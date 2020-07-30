@@ -17,6 +17,8 @@ lines.linewidth : 0.75
 
 axes.facecolor : (1, 1, 1)
 # figure.facecolor : (0.95, 0.95, 0.95)
-figure.figsize : 5, 2.5
+figure.figsize : 4.25279, 2.97992 # 0.8\textwidth
 figure.dpi : 500
 savefig.bbox: standard
+
+legend.frameon: False
