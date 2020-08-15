@@ -2,6 +2,8 @@ alias netflix="chromium --app=https://www.netflix.com"
 alias gitlog="git log --pretty=oneline --graph --all"
 alias ls='ls --color=auto'
 
+alias 'backup'='aws s3 sync ~/btsync/ s3://canismarko-backup --delete --storage-class INTELLIGENT_TIERING --follow-symlinks --sse'
+
 # An alias for running gsas from the command line
 # alias 'gsas'='~/miniconda3/envs/gsas/bin/python ~/miniconda3/envs/gsas/GSASII/GSASII.py'
 
