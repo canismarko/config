@@ -5,10 +5,10 @@
 Description=Jupyter Notebook
 
 [Service]
-Environment=FULLPROF=/home/mwolf/build/fullprof
+Environment="PATH=/home/mwolf/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 Type=simple
 PIDFile=/home/mwolf/.jupyter.pid
-ExecStart=/bin/bash -l -c 'conda activate && ${HOME}/miniconda3/bin/jupyter lab'
+ExecStart=/bin/zsh -il -c 'conda activate && ${HOME}/miniconda3/bin/jupyter lab --no-browser'
 WorkingDirectory=/
 Restart=always
 RestartSec=10
