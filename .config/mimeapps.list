@@ -17,6 +17,9 @@ application/iopexport_bib=emacs.desktop;
 image/jpeg=eog.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 text/plain=emacs.desktop;
+application/dicom=eog.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+application/vnd.ms-publisher=emacs.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

@@ -10,15 +10,8 @@ source $HOME/.aliases
 PS1='[\u@\h \W]\$ '
 export EDITOR=emacs
 
-# added by Anaconda2 4.0.0 installer
-# export PATH="/opt/anaconda/bin/:$PATH"
-# export PATH="/home/mwolf/bin/anaconda2/bin:$PATH"
-
 # added by travis gem
 [ -f /home/mwolf/.travis/travis.sh ] && source /home/mwolf/.travis/travis.sh
-
-# Miniconda3 binaries
-# export PATH="$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
 
 # Run chromium with a previously started SSH tunnel
 # ssh -NTvD 4711 user@host
@@ -29,11 +22,6 @@ function secure_chromium {
     chromium &
     exit
 }
-
-# Added conda path
-# echo ". /home/mwolf/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
-# . /home/mwolf/miniconda3/etc/profile.d/conda.sh  # commented out by conda initialize
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -53,3 +41,6 @@ unset __conda_setup
 # Install Ruby Gems to ~/gems
 # export GEM_HOME="$HOME/gems"
 # export PATH="$HOME/gems/bin:$PATH"
+
+# Add CUDA compiler and utils to the path
+export PATH=$PATH:/opt/cuda/bin

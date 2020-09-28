@@ -127,3 +127,6 @@ unset __conda_setup
 
 # added by travis gem
 [ -f /home/mwolf/.travis/travis.sh ] && source /home/mwolf/.travis/travis.sh
+
+# Add CUDA compiler and utils to the path
+export PATH=$PATH:/opt/cuda/bin
