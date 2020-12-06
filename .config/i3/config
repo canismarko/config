@@ -124,7 +124,7 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-bindsym $mod+Shift+f fullscreen toggle global
+bindsym $mod+Ctrl+f fullscreen toggle global
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -256,7 +256,17 @@ exec --no-startup-id xrandr --output HDMI-0 --primary --left-of DVI-I-1
 # Start the bluetooth tray icon
 exec --no-startup-id blueberry-tray
 
-# Window specific settings
+# Window specific settings #
+############################
+# Google hangouts not auto floating
 for_window [title="Google Hangouts"] floating disable
 # Presenter console for pdf's made by beamer
 for_window [title="^pdfpc - present"] border none floating enable
+# ImageJ should be floating
+# Main Toolbar: WM_CLASS(STRING) = "sun-awt-X11-XFramePeer", "net-imagej-launcher-ClassLauncher"
+# Select Dataset: WM_CLASS(STRING) = "sun-awt-X11-XFramePeer", "fiji-Main"
+# B&C: WM_CLASS(STRING) = "sun-awt-X11-XDialogPeer", "fiji-Main"
+# Log: WM_CLASS(STRING) = "sun-awt-X11-XFramePeer", "fiji-Main"
+# Image stack: WM_CLASS(STRING) = "sun-awt-X11-XFramePeer", "fiji-Main"
+for_window [class="net-imagej-launcher-ClassLauncher"] floating enable
+for_window [class="fiji-Main"] floating enable

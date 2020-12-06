@@ -61,7 +61,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux colorize emacs git github man mosh pep8 python rsync sudo systemd virtualenv)
+plugins=(archlinux colorize git github man mosh pep8 python rsync sudo systemd virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
