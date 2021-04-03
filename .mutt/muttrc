@@ -1,3 +1,6 @@
+# Make sure we're not using emacsclient, things get weird if you do
+set editor=emacs
+
 bind index G imap-fetch-mail
 
 # Get login info from a file not tracked with version control

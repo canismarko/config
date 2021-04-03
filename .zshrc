@@ -74,7 +74,9 @@ source $ZSH/oh-my-zsh.sh
 export LC_TIME="en_DK.UTF-8"
 
 # Preferred editor for local and remote sessions
-export EDITOR="emacs"
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -c -a emacs"
+
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else

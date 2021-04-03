@@ -47,13 +47,9 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+p exec $terminal -e ipython
 
 # Start emacs
-bindsym $mod+x exec emacs
+bindsym $mod+x exec ~/bin/edit
 
-# Start google music as app mode
-bindsym $mod+m exec chromium --app=https://music.google.com/
-
-# Start chromium in netflix mode
-bindsym $mod+n exec chromium --app=https://www.netflix.com
+# focus_follows_mouse no
 
 # Set background
 exec --no-startup-id /usr/bin/feh --bg-scale ~/.config/i3/chemistry-periodic-table-wallpaper.png
