@@ -2,3 +2,4 @@ figure.constrained_layout.use : True
 savefig.bbox : tight
 text.latex.preamble : \usepackage{siunitx}
 mathtext.default : regular
+figure.max_open_warning : 100

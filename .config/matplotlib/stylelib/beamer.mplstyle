@@ -13,12 +13,23 @@ ytick.minor.width : 0.3
 lines.markersize : 2
 lines.marker : None
 lines.linestyle : -
-lines.linewidth : 0.75
+lines.linewidth : 0.5
 
 axes.facecolor : (1, 1, 1)
 # figure.facecolor : (0.95, 0.95, 0.95)
-figure.figsize : 4.25279, 2.97992 # 0.8\textwidth
-figure.dpi : 500
-savefig.bbox: standard
 
 legend.frameon: False
+figure.dpi: 500
+savefig.bbox: standard
+
+# Different figures for different slide aspects, listed here for
+# clarity
+# To use these, also pull in the appropriate aspect ratio mplstyle file:
+#   E.g. >>> mpl.style.use('beamer149')
+# 
+# # 4x3 aspect ratio
+# figure.figsize : 4.25279, 2.97992 # 0.8\textheight
+# # 14x9 aspect ratio
+# figure.figsize : 4.72533, 2.790904 # 0.8\textheight
+# # 16x9 aspect ratio
+# figure.figsize : 5.5129, 2.790904 # 0.8\textheight
