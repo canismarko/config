@@ -1,5 +1,7 @@
 [Unit]
 Description=Davmail wrapper for e-mail on Outlook Exchange server
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=simple
