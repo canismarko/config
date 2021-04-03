@@ -85,6 +85,13 @@ audio/x-s3m=vlc.desktop;
 audio/x-xm=vlc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/octet-stream=emacs.desktop;
+application/vnd.ms-publisher=emacs.desktop;
+application/x-ns-proxy-autoconfig=emacs.desktop;
+chemical/x-cif=emacs.desktop;
+text/calendar=emacs.desktop;
+application/x-info=emacs.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
