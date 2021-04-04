@@ -101,8 +101,8 @@ source $HOME/.aliases
 
 # Ruby gems
 # Install Ruby Gems to ~/gems
-# export GEM_HOME="$HOME/gems"
-# export PATH="$HOME/gems/bin:$PATH"
+export GEM_HOME="$HOME/.gem"
+export PATH="$HOME/.gem/bin:$PATH"
 
 # System python modules but with the --user option
 export PATH=$PATH:$HOME/.local/bin
