@@ -92,6 +92,8 @@ text/calendar=emacs.desktop;
 application/x-info=emacs.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+image/webp=org.gnome.eog.desktop;
+application/octet-stream=emacs.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
