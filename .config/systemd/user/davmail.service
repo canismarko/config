@@ -6,7 +6,7 @@ Wants=network-online.target,lightdm.service
 [Service]
 Type=simple
 PIDFile=/run/davmail.pid
-ExecStart=/home/mwolf/build/davmail-5.4.0-3135/davmail
+ExecStart=/usr/bin/davmail
 WorkingDirectory=/
 Restart=always
 RestartSec=10
