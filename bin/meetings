@@ -1,2 +1,2 @@
 #!/bin/env bash
-emacs ~/Documents/meetings/meeting-notes.org &
+edit ~/Documents/meetings/meeting-notes.org &

@@ -20,7 +20,8 @@ exec --no-startup-id /usr/bin/compton -c
 floating_modifier $mod
 
 # start a terminal
-set $terminal i3-sensible-terminal
+# set $terminal i3-sensible-terminal
+set $terminal gnome-terminal
 bindsym $mod+Return exec $terminal
 
 # Start ipython
