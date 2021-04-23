@@ -14,10 +14,10 @@ gaps inner 10
 gaps outer 5
 
 # Compositor to allow for terminal transparency
-exec --no-startup-id /usr/bin/compton -c
+# exec --no-startup-id /usr/bin/compton -c
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# floating_modifier $mod
 
 # start a terminal
 # set $terminal i3-sensible-terminal
@@ -31,10 +31,10 @@ bindsym $mod+p exec $terminal -e ipython
 bindsym $mod+x exec ~/bin/edit
 
 # Start google music as app mode
-bindsym $mod+m exec chromium --app=https://music.google.com/
+# bindsym $mod+m exec chromium --app=https://music.google.com/
 
 # Start chromium in netflix mode
-bindsym $mod+n exec chromium --app=https://www.netflix.com
+# bindsym $mod+n exec chromium --app=https://www.netflix.com
 
 # Set background
 output "*" bg ~/.config/i3/chemistry-periodic-table-wallpaper.png fill
@@ -213,7 +213,7 @@ bindsym $mod+r mode "resize"
 
 # Start waybar to display a workspace bar
 bar {
-        status_command waybar
+    swaybar_command waybar
 }
 # Start nm-applet
 exec --no-startup-id nm-applet --indicator
@@ -222,7 +222,7 @@ exec --no-startup-id nm-applet --indicator
 output eDP-1 scale 2
 
 # Start the bluetooth tray icon
-exec --no-startup-id blueberry-tray
+# exec --no-startup-id blueberry-tray
 
 # Window specific settings
 for_window [title="Google Hangouts"] floating disable
