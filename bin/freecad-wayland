@@ -1,0 +1,3 @@
+#!/bin/sh
+# Workaround for running freecad with wayland
+QT_QPA_PLATFORM=xcb freecad
