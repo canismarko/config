@@ -5,7 +5,7 @@
 export NO_AT_BRIDGE=1
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Fullprof for refining X-ray diffraction data
 export FULLPROF=$HOME/build/fullprof
